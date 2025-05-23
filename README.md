@@ -16,11 +16,13 @@ My own mini project to learn `node.js`, `socket.io`, and `tailwind.css`.
 
 ## Features
 
-- Real-time messaging between users
 - User-friendly interface with responsive design
-- Customizable chat bubbles and UI components
-- Audio notifications for message events
-- Audio visualization for chat sounds
+- Real-time messaging between users
+- User can make their own channel (room)
+- Voice message with audio visualization for preview
+- Live chat, see the other user type her message in real-time
+- Guest what? It can format your message like WhatsApp! (ex. `*...*`, `_..._`, etc.)
+- Notifications for message events
 
 ## Installation
 
