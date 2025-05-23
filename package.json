@@ -1,0 +1,26 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A simple webapp using express, socket.io, and tailwind",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css -w -m"
+  },
+  "author": "fami0110",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "htmlspecialchars": "^1.0.5",
+    "socket.io": "^4.8.1",
+    "tailwindcss": "^4.1.6",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.35"
+  }
+}

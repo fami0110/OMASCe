@@ -1,0 +1,119 @@
+<nav class="navbar bg-base-200 shadow-sm">
+    <div class="flex-none">
+        <button class="btn btn-square btn-ghost" id="show-drawer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <h1 class="flex-1">
+        <a class="btn btn-ghost text-xl" href="/"
+            title="Obviously the Most Anonymous and (less) Secure Chat Ever (i've build:v)">
+            OMASCe
+        </a>
+    </h1>
+    <div class="flex-none">
+        <div title="Change Theme" class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn group btn-sm gap-1.5 px-1.5 btn-ghost" aria-label="Change Theme">
+                <div
+                    class="bg-base-100 group-hover:border-base-content/20 border-base-content/10 grid shrink-0 grid-cols-2 gap-0.5 rounded-md border p-1 transition-colors">
+                    <div class="bg-base-content size-1 rounded-full"></div>
+                    <div class="bg-primary size-1 rounded-full"></div>
+                    <div class="bg-secondary size-1 rounded-full"></div>
+                    <div class="bg-accent size-1 rounded-full"></div>
+                </div> 
+                <svg width="12px" height="12px"
+                    class="mt-px hidden size-2 fill-current opacity-60 sm:inline-block"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+            </div>
+            <div tabindex="0"
+                class="dropdown-content bg-base-200 text-base-content rounded-box top-px h-[30.5rem] max-h-[calc(100vh-8.6rem)] overflow-y-auto border border-white/5 shadow-2xl outline-1 outline-black/5 mt-16">
+                <ul class="menu w-56" id="theme-list">
+                    <li class="menu-title text-xs">Available Themes</li>
+
+                    <% const themes=[ 'light' , 'dark' , 'cupcake' , 'bumblebee' , 'emerald' , 'corporate' , 'synthwave'
+                        , 'retro' , 'cyberpunk' , 'valentine' , 'halloween' , 'garden' , 'forest' , 'aqua' , 'lofi'
+                        , 'pastel' , 'fantasy' , 'wireframe' , 'black' , 'luxury' , 'dracula' , 'cmyk' , 'autumn'
+                        , 'business' , 'acid' , 'lemonade' , 'night' , 'coffee' , 'winter' , 'dim' , 'nord' , 'sunset'
+                        , 'caramellatte' , 'abyss' , 'silk' ]; %>
+
+                        <% for (let theme of themes) { %>
+                            <li>
+                                <button class="gap-3 px-2 set-theme" data-set-theme="<%= theme %>">
+                                    <div data-theme="<%= theme %>"
+                                        class="bg-base-100 grid shrink-0 grid-cols-2 gap-0.5 rounded-md p-1 shadow-sm">
+                                        <div class="bg-base-content size-1 rounded-full"></div>
+                                        <div class="bg-primary size-1 rounded-full"></div>
+                                        <div class="bg-secondary size-1 rounded-full"></div>
+                                        <div class="bg-accent size-1 rounded-full"></div>
+                                    </div>
+                                    <div class="w-32 truncate">
+                                        <%= theme %>
+                                    </div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="currentColor" class="invisible h-3 w-3 shrink-0">
+                                        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </li>
+                        <% } %>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Profile -->
+
+        <div class="dropdown dropdown-end" id="profile">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar relative me-3">
+                <span class="indicator-item status status-success status-lg absolute top-0 right-[-4px] hide animate-ping"></span>
+                <span class="indicator-item status status-success status-lg absolute top-0 right-[-4px] hide"></span>
+                <div class="w-10 rounded-full">
+                    <img src="assets/avatar.png" alt="Avatar">
+                </div>
+            </div>
+            <div tabindex="0" class="dropdown-content card card-sm w-max bg-base-200 z-1 shadow-md top-px mt-16">
+                <div class="card-body pe-6 gap-0">
+                    <label class="label mb-[4px]">Username</label>
+                    <p>
+                        <span class="text-sm font-bold text-current me-1" id="username-display">Guest</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="20" height="20" id="change-profile"
+                            class="fill-current inline-block cursor-pointer transition-all relative bottom-px hover:scale-[1.2] hover:opacity-50">
+                            <g>
+                                <path d="M 140.5,23.5 C 145.287,22.9699 149.62,24.1366 153.5,27C 161.072,33.9013 167.905,41.4013 174,49.5C 175.886,56.5485 174.053,62.3818 168.5,67C 166.833,67.6667 165.167,67.6667 163.5,67C 151.953,55.9546 140.953,44.4546 130.5,32.5C 131,31.5 131.5,30.5 132,29.5C 134.736,27.2481 137.569,25.2481 140.5,23.5 Z" />
+                            </g>
+                            <g>
+                                <path d="M 122.5,38.5 C 134.777,49.6063 146.943,60.9396 159,72.5C 160.187,74.0444 160.52,75.7111 160,77.5C 157.838,81.3684 154.672,82.8684 150.5,82C 139.333,70.8333 128.167,59.6667 117,48.5C 116.333,46.8333 116.333,45.1667 117,43.5C 118.73,41.5981 120.563,39.9314 122.5,38.5 Z" />
+                            </g>
+                            <g>
+                                <path d="M 107.5,53.5 C 109.783,53.6079 111.783,54.4412 113.5,56C 124.363,66.5293 134.863,77.3626 145,88.5C 145.667,89.8333 145.667,91.1667 145,92.5C 125.5,112 106,131.5 86.5,151C 70.1044,156.914 53.4377,161.58 36.5,165C 33.7104,162.79 32.877,159.956 34,156.5C 37.8672,141.566 42.5339,126.899 48,112.5C 67.7283,92.6045 87.5617,72.9378 107.5,53.5 Z" />
+                            </g>
+                        </svg>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<dialog id="profileModal" class="modal" style="background-color: rgba(0,0,0,0.8);">
+    <div class="modal-box max-w-[400px]">
+        <h3 class="divider text-[1.5rem] text-center font-bold mt-3 mb-5 title">
+            Profile
+        </h3>
+
+        <fieldset class="fieldset">
+            <legend class="fieldset-legend">What should people call you?</legend>
+            <input type="text" class="input w-full" id="username" placeholder="Guest0110" />
+            <p class="label">You can also edit later on profile</p>
+        </fieldset>
+
+        <div class="modal-action">
+            <button class="btn btn-primary submit">Submit</button>
+        </div>
+    </div>
+</dialog>
