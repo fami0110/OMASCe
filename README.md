@@ -1,3 +1,47 @@
 # OMASCe
+*Obviously the Most Anonymous and (less) Secure Chat ever (i've build:v)*
 
-Obviously the Most Anonymous and (less) Secure Chat ever (i've build:v)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
+
+My own mini project to learn `node.js`, `socket.io`, and `tailwind.css`.
+
+## Technologies Used
+
+- **Backend:** Node.js, Express.js
+- **Templating Engine:** EJS
+- **Real-time Communication:** Socket.io
+- **Styling:** Tailwind CSS, DaisyUI
+- **Alerts & Notifications:** Sweet Alert 2
+- **Audio Visualization:** Wavesurfer.js
+
+## Features
+
+- Real-time messaging between users
+- User-friendly interface with responsive design
+- Customizable chat bubbles and UI components
+- Audio notifications for message events
+- Audio visualization for chat sounds
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone <repository-url>
+    cd <repository-folder>
+    ```
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+1. Start the server:
+    
+    ```bash
+    npm start
+    ```
+2. Open your browser and navigate to `http://localhost:3000` to use the chat app.
+
+
