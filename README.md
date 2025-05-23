@@ -27,8 +27,8 @@ My own mini project to learn `node.js`, `socket.io`, and `tailwind.css`.
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
-    cd <repository-folder>
+    git clone https://github.com/fami0110/OMASCe.git
+    cd OMASCe
     ```
 2. Install dependencies:
 
