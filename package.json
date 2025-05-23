@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "build:dev": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css -w -m",
     "build": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css -m"
   },
