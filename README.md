@@ -18,7 +18,7 @@ My own mini project to learn `node.js`, `socket.io`, and `tailwind.css`.
 
 - User-friendly interface with responsive design
 - Real-time messaging between users
-- Don't worry, I'm not taking your personal info (maybe). You just need a username and browser localstorage only for your profile:D.
+- Don't worry, _I'm not taking your personal info..._ (maybe-). You just need your glizzy username and browser `localStorage` only for your profile :D
 - User can make their own channel (room)
 - Voice message with audio visualization for preview
 - Live chat, see the other user type her message in real-time
