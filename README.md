@@ -29,20 +29,20 @@ My own mini project to learn `node.js`, `socket.io`, and `tailwind.css`.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/fami0110/OMASCe.git
-    cd OMASCe
+    $ git clone https://github.com/fami0110/OMASCe.git
+    $ cd OMASCe
     ```
 2. Install dependencies:
 
     ```bash
-    npm install
+    $ npm install
     ```
 
 ## Usage
 1. Start the server:
     
     ```bash
-    npm start
+    $ npm start
     ```
 2. Open your browser and navigate to `http://localhost:3000` to use the chat app.
 
